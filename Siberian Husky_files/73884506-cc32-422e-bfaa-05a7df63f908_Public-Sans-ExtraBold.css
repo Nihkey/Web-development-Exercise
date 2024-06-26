@@ -1,0 +1,15 @@
+
+
+@font-face {
+    font-family: 'igbr-Public Sans ExtraBold';
+    
+    
+    src: 
+        url('https://branding.jifo.co/3a094736-976d-49df-b184-37b10ee41cc7_Public-Sans-ExtraBold.woff2') format('woff2'),
+        
+        url('https://branding.jifo.co/64a88e85-52cf-4c15-9370-2946434d95c4_Public-Sans-ExtraBold.woff') format('woff'),
+        
+        url('https://branding.jifo.co/51099cad-1bdb-49e3-ad7c-9d1eb52bc5e1_Public-Sans-ExtraBold.ttf') format('truetype');
+        
+}
+

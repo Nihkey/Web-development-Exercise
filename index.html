@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Exercises</title>
+    <style>
+      /* CSS Text Styling */
+      .styled-paragraph {
+        font-family: "Arial, fantasy";
+        font-size: 20px;
+        color: #4a90e2;
+        text-align: left;
+      }
+      /* CSS Borders and Backgrounds */
+      .div1 {
+        border: 2px solid #ff5733;
+        background-color: #ffc300;
+        padding: 20px;
+        margin: 15px;
+      }
+      .div2 {
+        border: 3px dashed #33ff57;
+        background-color: #daf7a6;
+        padding: 20px;
+        margin: 15px;
+      }
+      .div3 {
+        border: 4px dotted #3357ff;
+        background-color: #cc1479;
+        padding: 20px;
+        margin: 15px;
+      }
+      /* CSS Box Model */
+      .box-model-div {
+        padding: 30px;
+        margin: 30px;
+        border: 3px solid #000;
+        background-color: #f0f0f0;
+      }
+      /* CSS Flexbox */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+      }
+
+      .logo img {
+        height: 50px;
+      }
+
+      .nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .nav a:hover {
+        text-decoration: underline;
+      }
+      /* CSS Grid */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: auto;
+        padding: 20px;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      /* Responsive Design */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .header {
+        background-color: #180b8d;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .main-content {
+        flex: 3;
+        background-color: white;
+        padding: 20px;
+        margin-right: 20px;
+        box-shadow: 0 2px 4px rgba(226, 17, 17, 0.1);
+      }
+
+      .sidebar {
+        flex: none;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Media Query for Small Screens */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .main-content {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+      /* CSS Pseudo-classes */
+      .nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+      }
+
+      .nav ul li {
+        margin: 0 15px;
+      }
+
+      .nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .nav ul li a:hover {
+        background-color: #180b8d;
+        color: #ff0;
+      }
+
+      .nav ul li a:active {
+        background-color: #700d0d;
+        color: #ff0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Basic HTML Structure -->
+    <h1>My Favorite Foods</h1>
+    <p>Here is a list of my favorite foods:</p>
+    <ol>
+      <li>Fried Rice</li>
+      <li>Egusi Soup and Semovita</li>
+      <li>Oha Soup and Fufu</li>
+      <li>African Salad</li>
+      <li>Okpa and Pap</li>
+    </ol>
+
+    <!-- HTML Links and Images -->
+    <h1>Dogs</h1>
+    <p>
+      Dogs are domesticated mammals, not natural wild animals. They were
+      originally bred from wolves. They have been bred by humans for a long
+      time, and were the first animals ever to be domesticated.
+    </p>
+    <img
+      src="https://www.britannica.com
+      /animal/Siberian-husky"
+      alt="Image of a Siberian-husky"
+      width="300"
+    />
+    <p>
+      For more information about dogs, visit
+      <a href="https://en.wikipedia.org/wiki/Dog" target="_blank"
+        >Wikipedia page</a
+      >.
+    </p>
+
+    <!-- HTML Tables -->
+    <h1>Class Schedule</h1>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Subject</th>
+        <th>Teacher</th>
+      </tr>
+      <tr>
+        <td>8:00 AM - 9:00 AM</td>
+        <td>Math</td>
+        <td>Corper Aliyu</td>
+      </tr>
+      <tr>
+        <td>9:00 AM - 10:00 AM</td>
+        <td>English</td>
+        <td>Mrs. Okafor</td>
+      </tr>
+      <tr>
+        <td>10:00 AM - 11:00 AM</td>
+        <td>Web Design</td>
+        <td>Mr. John</td>
+      </tr>
+      <tr>
+        <td>11:00 AM - 12:00 PM</td>
+        <td>Mechanics</td>
+        <td>Cmd. Baidom</td>
+      </tr>
+      <tr>
+        <td>12:00 PM - 1:00 PM</td>
+        <td>Economics</td>
+        <td>Lt Cmd. Isaac</td>
+      </tr>
+    </table>
+
+    <!-- CSS Text Styling -->
+    <p class="styled-paragraph">
+      An LNG vessel, also known as a liquefied natural gas carrier or LNG
+      tanker, is a specialized ship designed for the transportation of liquefied
+      natural gas (LNG). LNG is natural gas that has been cooled to
+      approximately -162 degrees Celsius (-260 degrees Fahrenheit), at which
+      point it becomes a liquid and occupies a much smaller volume compared to
+      its gaseous state. This liquefaction process enables efficient storage and
+      transportation of natural gas over long distances by sea.
+    </p>
+
+    <!-- CSS Borders and Backgrounds -->
+    <div class="div1">I Love The Tech Family.</div>
+    <div class="div2">Forever Is The Deal.</div>
+    <div class="div3">Mr John With A Special Way Of Mentoring.</div>
+
+    <!-- CSS Box Model -->
+    <div class="box-model-div">
+      I Have Never Seen Any Mentor That Makes You Understand Every Single Thing
+      You Seem Not To Understand Like Mr. John. He has a unique way to lecture.
+    </div>
+
+    <!-- CSS Flexbox -->
+    <header class="header">
+      <div class="logo"><img src="images/logo.png" alt="Logo" /></div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- CSS Grid -->
+    <h1>Photo Gallery</h1>
+    <div class="gallery">
+      <img src="images/photo1.jpg" alt="Photo 1" />
+      <img src="images/photo2.jpg" alt="Photo 2" />
+      <img src="images/photo3.jpg" alt="Photo 3" />
+      <img src="images/photo4.jpg" alt="Photo 4" />
+      <img src="images/photo5.jpg" alt="Photo 5" />
+      <img src="images/photo6.jpg" alt="Photo 6" />
+    </div>
+
+    <!-- Responsive Design -->
+    <div class="container">
+      <main class="main-content">
+        <h2>Introduction</h2>
+        <p>
+          The Nigerian Navy is the sea branch of the Nigerian Armed Forces. It
+          is one of the largest navies on the African continent, consisting of
+          thousands of personnel and numerous ships. The Nigerian Navy plays a
+          vital role in maintaining maritime security in the Gulf of Guinea and
+          beyond.
+        </p>
+        <section id="history">
+          <h3>History</h3>
+          The Nigerian Navy was established in 1956 as a modest marine defense
+          force. Over the decades, it has grown significantly, expanding its
+          capabilities and scope of operations. The Navy has played a crucial
+          role in various national and international missions, including
+          peacekeeping and anti-piracy operations.
+        </section>
+        <section id="missions">
+          <h4>Missions</h4>
+          The primary mission of the Nigerian Navy is to protect Nigeria's
+          territorial waters and ensure maritime security. This includes
+          combating piracy, smuggling, and illegal fishing. The Navy also
+          engages in search and rescue operations, disaster response, and
+          international peacekeeping missions.
+        </section>
+        <section id="acheivements">
+          <h5>Acheivements</h5>
+          Throughout its history, the Nigerian Navy has achieved numerous
+          milestones. It has successfully conducted operations to curb illegal
+          activities in Nigeria's waters, participated in international
+          peacekeeping efforts, and collaborated with other navies to enhance
+          regional security. The Navy's commitment to excellence is reflected in
+          its continuous modernization and training programs.
+        </section>
+      </main>
+      <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <section>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#missions">Missions</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Contact Information</h3>
+          <p>Email: info@nigeriannavy.mil.ng</p>
+          <p>Phone: +234 123 4567</p>
+        </section>
+        <section>
+          <h3>Latest News</h3>
+          <p><a href="#news1">Nigerian Navy Launches New Ships</a></p>
+          <p><a href="#news2">Anti-Piracy Operations Successful</a></p>
+        </section>
+        <section>
+          <h3>Events Calendar</h3>
+          <p>July 15, 2024: Naval Exercise</p>
+          <p>August 20, 2024: International Conference</p>
+        </section>
+        <section>
+          <h3>Important Documents</h3>
+          <p><a href="#report">Annual Report 2023</a></p>
+          <p><a href="#strategy">Strategic Plan 2024-2029</a></p>
+        </section>
+        <section>
+          <h3>Photo Gallery</h3>
+          <img src="images/navy1.jpg" alt="Navy Ship" style="width: 15%" />
+          <img src="images/navy2.jpg" alt="Navy Personnel" style="width: 15%" />
+        </section>
+        <section>
+          <h3>Follow Us</h3>
+          <p><a href="https://twitter.com/nigeriannavy">Twitter</a></p>
+          <p><a href="https://facebook.com/nigeriannavy">Facebook</a></p>
+          <p><a href="https://instagram.com/nigeriannavy">Instagram</a></p>
+        </section>
+      </aside>
+    </div>
+
+    <!-- CSS Pseudo-classes -->
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
